@@ -360,9 +360,9 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           className="w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
           <Image
-            src={"/img/dashboardProject.png"}
+            src={"/img/DashboardProject.png"}
             fill
-            alt=""
+            alt="Dahsborad"
             className="object-cover h-full w-full"
           />
         </motion.div>
@@ -533,7 +533,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.8 }}
-          className="hidden md:bloack w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
+          className="hidden md:block w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
           <Image
             src={"/img/abubakrProject.png"}
