@@ -16,7 +16,7 @@ const Page = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
-          className="text-white/3 font-bold fixed top-60 left-0 text-9xl overflow-hidden"
+          className="text-white/3 font-bold fixed top-60 left-0 text-8xl md:text-9xl overflow-hidden"
         >
           <Marquee speed={35} className="overflow-hidden" direction="right">
             Welcome to my portfolio — Frontend Developer — React & Next.js
@@ -26,7 +26,7 @@ const Page = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
-          className="text-white/5 font-bold fixed top-96 left-0 text-9xl overflow-hidden"
+          className="text-white/5 font-bold fixed top-96 left-0 text-8xl md:text-9xl overflow-hidden"
         >
           <Marquee speed={35} className="overflow-hidden">
             Welcome to my portfolio — Frontend Developer — React & Next.js
