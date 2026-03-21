@@ -65,10 +65,10 @@ const LeftPage = () => {
               Front End Developer
             </span>
             <div className="pt-2 text-main flex space-x-4 cursor-pointer">
-              <a href="#insta">
+              <a href="https://www.instagram.com/bkar_ali7" target="_blank">
                 <FaInstagram />
               </a>
-              <a href="#github">
+              <a href="https://github.com/bkar-ali" target="_blank">
                 <FiGithub />
               </a>
             </div>

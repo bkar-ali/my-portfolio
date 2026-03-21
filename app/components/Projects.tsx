@@ -168,21 +168,21 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           className="w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
-          <Image
-            src={"/img/asselProject.png"}
-            fill
-            alt=""
-            className="object-cover"
-          />
+          <a href="https://assel-ecommerce.vercel.app/" target="_blank">
+            <Image
+              src={"/img/asselProject.png"}
+              fill
+              alt=""
+              className="object-cover"
+            />
+          </a>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex-1 md:px-5 p-2"
         >
@@ -257,7 +257,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
           className="block md:hidden w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
@@ -272,7 +272,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
           className="flex-1 md:px-5 p-2"
         >
@@ -342,12 +342,14 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           transition={{ duration: 0.8 }}
           className="hidden md:block w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
-          <Image
-            src={"/img/shopsyProject.png"}
-            fill
-            alt=""
-            className="object-cover"
-          />
+          <a href="https://bkar-e-commerce.netlify.app/#" target="_blank">
+            <Image
+              src={"/img/shopsyProject.png"}
+              fill
+              alt=""
+              className="object-cover"
+            />
+          </a>
         </motion.div>
       </div>
       {/* Dashboard Project */}
@@ -355,21 +357,26 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
           className="w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
-          <Image
-            src={"/img/DashboardProject.png"}
-            fill
-            alt="Dahsborad"
-            className="object-cover h-full w-full"
-          />
+          <a
+            href="https://abubakr-dashboard-project.netlify.app/"
+            target="_blank"
+          >
+            <Image
+              src={"/img/DashboardProject.png"}
+              fill
+              alt="Dahsborad"
+              className="object-cover h-full w-full"
+            />
+          </a>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
           className="flex-1 md:px-5 p-2"
         >
@@ -443,7 +450,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
           className="block md:hidden w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
@@ -459,7 +466,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
           className="flex-1 md:px-5 p-2"
         >
@@ -535,12 +542,14 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           transition={{ duration: 0.8 }}
           className="hidden md:block w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
-          <Image
-            src={"/img/abubakrProject.png"}
-            fill
-            alt=""
-            className="object-cover"
-          />
+          <a href="https://abubakr-world.netlify.app/" target="_blank">
+            <Image
+              src={"/img/abubakrProject.png"}
+              fill
+              alt=""
+              className="object-cover"
+            />
+          </a>
         </motion.div>
       </div>
 
