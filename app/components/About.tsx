@@ -1,4 +1,5 @@
 import { FaAngleRight } from "react-icons/fa6";
+import ButtonCv from "./ButtonCv";
 
 type typeStandFor = {
   id: number;
@@ -51,9 +52,9 @@ function scrollToTop() {
 
 const About = ({ setSection }: { setSection: (s: string) => void }) => {
   return (
-    <div className="py-5 px-2 text-white">
+    <div className="pt-5 pb-2 px-2 text-white">
       <p>
-        <span className="text-4xl font-semibold block mb-3">
+        <span className="text-4xl font-semibold block">
           Hi, I&apos;m Abobakr
           <br />
           loves <span className="text-main">turning</span> ideas into
@@ -71,8 +72,8 @@ const About = ({ setSection }: { setSection: (s: string) => void }) => {
                   I&apos;m passionate about creating clean UI and smooth user
                   experiences. */}
       </p>
-      <div className="pt-12">
-        <div className="text-white text-4xl md:text-5xl font-semibold pb-5">
+      <div className="pt-10">
+        <div className="text-white text-3xl md:text-4xl font-semibold pb-5">
           What I <span className="text-main">stand for</span>
         </div>
         <div className="pb-5 text-white">
@@ -102,17 +103,8 @@ const About = ({ setSection }: { setSection: (s: string) => void }) => {
           ))}
         </div>
       </div>
-      <div className="pt-12">
-        <div className="text-4xl font-semibold">
-          What I&apos;m
-          <span className="text-main"> currently learning</span>
-        </div>
-        <div className="pt-5 pb-10">
-          I&apos;m currently expanding my web development skills by exploring
-          backend technologies and
-          <br /> learning how to build complete full-stack applications by
-          connecting servers, APIs, and databases.
-        </div>
+      <div className="pt-6">
+        <ButtonCv />
       </div>
       <div
         className=" text-main flex justify-end items-center cursor-pointer font-semibold"

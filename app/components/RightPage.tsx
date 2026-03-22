@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import About from "./About";
 import Skills from "./Skills";
-import Resume from "./Resume";
+// import Resume from "./Resume";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
@@ -22,7 +22,7 @@ type navType = {
 const nav: navType[] = [
   { id: "about", section: "About" },
   { id: "skills", section: "Skills" },
-  { id: "resume", section: "Resume" },
+  // { id: "resume", section: "Resume" },
   { id: "projects", section: "Projects" },
   { id: "contact", section: "Contact" },
 ];
@@ -94,7 +94,7 @@ const RightPage = () => {
             >
               {section === "about" && <About setSection={setSection} />}
               {section === "skills" && <Skills setSection={setSection} />}
-              {section === "resume" && <Resume />}
+              {/* {section === "resume" && <Resume />} */}
               {section === "projects" && <Projects setSection={setSection} />}
               {section === "contact" && <Contact />}
             </motion.div>

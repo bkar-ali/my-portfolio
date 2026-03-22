@@ -214,7 +214,7 @@ const Skills = ({ setSection }: { setSection: (s: string) => void }) => {
       {skillsSections.map((section) => (
         <div key={section.sectionName}>
           {/* Header */}
-          <div className="text-white text-3xl md:text-4xl font-semibold pt-8 md:pt-10 pb-5">
+          <div className="text-white text-2xl md:text-3xl font-semibold pt-8 md:pt-10 pb-5">
             {section.sectionName}
           </div>
           {/* Header */}
