@@ -5,6 +5,7 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { CiCalendar } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import Image from "next/image";
 
@@ -53,7 +54,7 @@ const LeftPage = () => {
           <div className="flex justify-center w-full items-center flex-col text-white border-b border-white/10 group-hover:border-main/25 duration-300 pb-5 space-y-2.5">
             <div className="relative w-3/4 h-[20vh] rounded-2xl overflow-hidden">
               <Image
-                src={"/img/bkar.JPG"}
+                src={"/img/bkar.jpg"}
                 alt="Personal Image"
                 fill
                 className="object-cover grayscale group-hover:grayscale-0 transition duration-700"
@@ -65,8 +66,11 @@ const LeftPage = () => {
               Front End Developer
             </span>
             <div className="pt-2 text-main flex space-x-4 cursor-pointer">
-              <a href="https://www.instagram.com/bkar_ali7" target="_blank">
-                <FaInstagram />
+              <a
+                href="https://www.linkedin.com/in/abubakr-ali-689272255/"
+                target="_blank"
+              >
+                <FaLinkedin />
               </a>
               <a href="https://github.com/bkar-ali" target="_blank">
                 <FiGithub />

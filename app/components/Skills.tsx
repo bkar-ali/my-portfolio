@@ -262,12 +262,12 @@ const Skills = ({ setSection }: { setSection: (s: string) => void }) => {
       <div
         className=" text-main flex justify-end items-center cursor-pointer font-semibold pt-3 md:pt-0"
         onClick={() => {
-          setSection("resume");
-          localStorage.setItem("page", "resume");
+          setSection("projects");
+          localStorage.setItem("page", "projects");
           scrollToTop();
         }}
       >
-        Resume Secion
+        Projects Secion
         <span className="ml-1">
           <FaAngleRight />
         </span>

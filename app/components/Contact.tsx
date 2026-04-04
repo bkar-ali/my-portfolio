@@ -24,7 +24,7 @@ const contacts: data[] = [
     name: "WhatsApp",
     icon: <FaWhatsapp />,
     color: "#25D366",
-    info: "01111045313",
+    info: "+201111045313",
     link: "#",
   },
   {

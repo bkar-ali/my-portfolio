@@ -167,7 +167,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
       <div className="box w-full h-full flex flex-col md:flex-row overflow-hidden rounded-xl mb-10">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           className="w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
@@ -182,7 +182,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex-1 md:px-5 p-2"
         >
@@ -538,7 +538,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
           className="hidden md:block w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
