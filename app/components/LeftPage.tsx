@@ -54,7 +54,7 @@ const LeftPage = () => {
           <div className="flex justify-center w-full items-center flex-col text-white border-b border-white/10 group-hover:border-main/25 duration-300 pb-5 space-y-2.5">
             <div className="relative w-3/4 h-[20vh] rounded-2xl overflow-hidden">
               <Image
-                src={"/img/bkar.jpg"}
+                src={"/img/bkar.JPG"}
                 alt="Personal Image"
                 fill
                 className="object-cover grayscale group-hover:grayscale-0 transition duration-700"
