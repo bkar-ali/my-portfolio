@@ -223,12 +223,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           transition={{ duration: 0.8 }}
           className="block md:hidden w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
-          <Image
-            src={"/img/authMern.PNG"}
-            fill
-            alt=""
-            className="object-cover"
-          />
+          <Image src={"/img/auth.png"} fill alt="" className="object-cover" />
         </motion.div>
         {/* Mobile Image */}
         <motion.div
@@ -307,12 +302,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           className="hidden md:block w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
           <a href="https://bkar-e-commerce.netlify.app/#" target="_blank">
-            <Image
-              src={"/img/authMern.PNG"}
-              fill
-              alt=""
-              className="object-cover"
-            />
+            <Image src={"/img/auth.png"} fill alt="" className="object-cover" />
           </a>
         </motion.div>
       </div>
