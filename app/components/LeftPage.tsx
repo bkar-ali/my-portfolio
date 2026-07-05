@@ -1,4 +1,3 @@
-"use client";
 import React, { ReactNode } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoPhonePortraitOutline } from "react-icons/io5";

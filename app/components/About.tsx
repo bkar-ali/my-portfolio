@@ -55,18 +55,19 @@ const About = ({ setSection }: { setSection: (s: string) => void }) => {
     <div className="pt-5 pb-2 px-2 text-white">
       <p>
         <span className="text-4xl font-semibold block">
-          Hi, I&apos;m Abobakr
+          Hi, I&apos;m Abubakr
           <br />
           loves <span className="text-main">turning</span> ideas into
           <br />
           interactive and responsive
           <br /> web experience
         </span>
-        <br />a Frontend Developer passionate about building modern and
+        <br />A Full Stack MERN Developer passionate about building modern and
         responsive web applications.
         <br /> I enjoy creating clean user interfaces and improving user
         experience.
-        <br /> I specialize in React, Next.js, TypeScript, and Tailwind CSS.
+        <br /> I specialize in React, Next.js, TypeScript, Node.js, Express.js,
+        MongoDB, Tailwind CSS, and RESTful APIs.
         {/* i work mainly
                   with React, Next.js, TypeScript, and Tailwind CSS, and
                   I&apos;m passionate about creating clean UI and smooth user

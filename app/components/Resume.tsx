@@ -4,7 +4,7 @@ import ButtonCv from "./ButtonCv";
 const Resume = () => {
   return (
     <div className="p-5 h-[90vh] md:h-full">
-      <h2 className="text-white text-4xl font-semibold pb-4">Educatino</h2>
+      <h2 className="text-white text-4xl font-semibold pb-4">Education</h2>
       <div className="text-white pb-7">
         Bachelor&apos;s Degree in Commerce – Accounting
       </div>

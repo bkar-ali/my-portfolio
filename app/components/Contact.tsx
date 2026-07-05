@@ -1,4 +1,3 @@
-"use client";
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
 
@@ -25,7 +24,7 @@ const contacts: data[] = [
     icon: <FaWhatsapp />,
     color: "#25D366",
     info: "+201111045313",
-    link: "#",
+    link: "https://wa.me/201111045313",
   },
   {
     id: 2,
@@ -49,7 +48,7 @@ const contacts: data[] = [
     icon: <AiOutlineMail />,
     color: "#EA4335",
     info: "bkarali345@gmail.com",
-    link: "#",
+    link: "mailto:bkarali345@gmail.com",
   },
 ];
 

@@ -1,8 +1,15 @@
-"use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { FaAngleRight } from "react-icons/fa6";
+
+import { FaNodeJs } from "react-icons/fa";
+import {
+  SiExpress,
+  SiMongodb,
+  SiMongoose,
+  SiJsonwebtokens,
+} from "react-icons/si";
 
 // Main Stack
 import { FaReact } from "react-icons/fa";
@@ -27,7 +34,6 @@ const asselTech = [
     id: 1,
     name: "React",
     icon: <FaReact />,
-    level: 80,
     color: "#61DAFB",
     shadow: "shadow-[0_0_25px_rgba(97,218,251,0.35)]",
   },
@@ -35,7 +41,6 @@ const asselTech = [
     id: 2,
     name: "Next",
     icon: <RiNextjsFill />,
-    level: 75,
     color: "#ffffff",
     shadow: "shadow-[0_0_25px_rgba(255,255,255,0.25)]",
   },
@@ -43,7 +48,6 @@ const asselTech = [
     id: 3,
     name: "TypeScript",
     icon: <BiLogoTypescript />,
-    level: 75,
     color: "#3178C6",
     shadow: "shadow-[0_0_25px_rgba(49,120,198,0.35)]",
   },
@@ -51,7 +55,6 @@ const asselTech = [
     id: 4,
     name: "Tailwind",
     icon: <RiTailwindCssFill />,
-    level: 85,
     color: "#38BDF8",
     shadow: "shadow-[0_0_25px_rgba(56,189,248,0.35)]",
   },
@@ -59,7 +62,6 @@ const asselTech = [
     id: 5,
     name: "Redux",
     icon: <SiRedux />,
-    level: 80,
     color: "#764ABC",
     shadow: "shadow-[0_0_25px_rgba(118,74,188,0.35)]",
   },
@@ -67,9 +69,66 @@ const asselTech = [
     id: 6,
     name: "Axios",
     icon: <SiAxios />,
-    level: 75,
     color: "#5A29E4",
     shadow: "shadow-[0_0_25px_rgba(90,41,228,0.35)]",
+  },
+];
+const authTech = [
+  {
+    id: 1,
+    name: "Next",
+    icon: <RiNextjsFill />,
+    color: "#ffffff",
+    shadow: "shadow-[0_0_25px_rgba(255,255,255,0.25)]",
+  },
+  {
+    id: 2,
+    name: "React",
+    icon: <FaReact />,
+    color: "#61DAFB",
+    shadow: "shadow-[0_0_25px_rgba(97,218,251,0.35)]",
+  },
+  {
+    id: 3,
+    name: "Tailwind",
+    icon: <RiTailwindCssFill />,
+    color: "#38BDF8",
+    shadow: "shadow-[0_0_25px_rgba(56,189,248,0.35)]",
+  },
+  {
+    id: 4,
+    name: "Node.js",
+    icon: <FaNodeJs />,
+    color: "#5FA04E",
+    shadow: "shadow-[0_0_25px_rgba(95,160,78,0.35)]",
+  },
+  {
+    id: 5,
+    name: "Express",
+    icon: <SiExpress />,
+    color: "#ffffff",
+    shadow: "shadow-[0_0_25px_rgba(255,255,255,0.25)]",
+  },
+  {
+    id: 6,
+    name: "MongoDB",
+    icon: <SiMongodb />,
+    color: "#47A248",
+    shadow: "shadow-[0_0_25px_rgba(71,162,72,0.35)]",
+  },
+  {
+    id: 7,
+    name: "Mongoose",
+    icon: <SiMongoose />,
+    color: "#880000",
+    shadow: "shadow-[0_0_25px_rgba(136,0,0,0.35)]",
+  },
+  {
+    id: 8,
+    name: "JWT",
+    icon: <SiJsonwebtokens />,
+    color: "#D63AFF",
+    shadow: "shadow-[0_0_25px_rgba(214,58,255,0.35)]",
   },
 ];
 const shopsyTech = [
@@ -77,7 +136,6 @@ const shopsyTech = [
     id: 1,
     name: "React",
     icon: <FaReact />,
-    level: 80,
     color: "#61DAFB",
     shadow: "shadow-[0_0_25px_rgba(97,218,251,0.35)]",
   },
@@ -86,7 +144,6 @@ const shopsyTech = [
     id: 2,
     name: "Tailwind",
     icon: <RiTailwindCssFill />,
-    level: 85,
     color: "#38BDF8",
     shadow: "shadow-[0_0_25px_rgba(56,189,248,0.35)]",
   },
@@ -94,14 +151,12 @@ const shopsyTech = [
     id: 3,
     name: "Redux",
     icon: <SiRedux />,
-    level: 80,
     color: "#764ABC",
     shadow: "shadow-[0_0_25px_rgba(118,74,188,0.35)]",
   },
 
   {
     id: 4,
-    level: 75,
     name: "Vite",
     icon: <SiVite />,
     color: "#646CFF",
@@ -113,7 +168,6 @@ const dashTech = [
     id: 7,
     name: "HTML",
     icon: <FaHtml5 />,
-    level: 90,
     color: "#E34F26",
     shadow: "shadow-[0_0_25px_rgba(227,79,38,0.35)]",
   },
@@ -121,7 +175,6 @@ const dashTech = [
     id: 8,
     name: "CSS",
     icon: <IoLogoCss3 />,
-    level: 85,
     color: "#1572B6",
     shadow: "shadow-[0_0_25px_rgba(21,114,182,0.35)]",
   },
@@ -129,7 +182,6 @@ const dashTech = [
     id: 10,
     name: "Bootstrap",
     icon: <FaBootstrap />,
-    level: 75,
     color: "#7952B3",
     shadow: "shadow-[0_0_25px_rgba(121,82,179,0.35)]",
   },
@@ -139,7 +191,6 @@ const worldTech = [
     id: 7,
     name: "HTML",
     icon: <FaHtml5 />,
-    level: 90,
     color: "#E34F26",
     shadow: "shadow-[0_0_25px_rgba(227,79,38,0.35)]",
   },
@@ -147,7 +198,6 @@ const worldTech = [
     id: 8,
     name: "CSS",
     icon: <IoLogoCss3 />,
-    level: 85,
     color: "#1572B6",
     shadow: "shadow-[0_0_25px_rgba(21,114,182,0.35)]",
   },
@@ -162,7 +212,110 @@ function scrollToTop() {
 
 const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
   return (
-    <div className="md:p-5 text-white">
+    <div className="md: p-3 text-white">
+      {/* Auth MERN Project */}
+      <div className="box w-full h-full flex flex-col md:flex-row overflow-hidden rounded-xl mb-10">
+        {/* Mobile Image */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8 }}
+          className="block md:hidden w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
+        >
+          <Image
+            src={"/img/authMern.PNG"}
+            fill
+            alt=""
+            className="object-cover"
+          />
+        </motion.div>
+        {/* Mobile Image */}
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8 }}
+          className="flex-1 md:px-5 p-2"
+        >
+          {/* Header */}
+          <h2 className="text-2xl tracking-wider font-semibold">
+            <span className="text-auth">Authentication </span>
+            System
+          </h2>
+          {/* About Project */}
+          <div className="pt-2 text-sm">
+            A full-stack MERN authentication system with secure authentication
+            and modern backend architecture.
+          </div>
+          {/* Features Section */}
+          <h2 className="pt-1 text-auth font-semibold">Features</h2>
+          <div className="pt-1 text-sm">
+            • User registration and login
+            <br />• JWT-based authentication
+            <br />• Protected routes
+            <br />• Password hashing
+            <br />• Profile management
+            <br />• Input Validation
+            <br />• RESTful API
+          </div>
+          {/* Tech */}
+          <div className="pt-2 grid grid-cols-2">
+            {authTech.map((tech) => (
+              <span
+                className="px-2 py-1 rounded-full text-sm mr-1 mb-2 flex items-center justify-center"
+                style={{
+                  color: `${tech.color}`,
+                  border: `1px solid ${tech.color}`,
+                }}
+                key={tech.id}
+              >
+                <span className="pr-1 text-xl">{tech.icon}</span>
+                {tech.name}
+              </span>
+            ))}
+          </div>
+          {/* Live Demo */}
+          <div className="pt-1 flex">
+            <a
+              href="https://auth-mern-frontend-liard.vercel.app/login"
+              target="_blank"
+              className="flex w-[50%] border rounded-2xl px-2 py-1 items-center justify-center mr-2 cursor-pointer hover:bg-white hover:text-black duration-500 font-semibold"
+            >
+              Live Demo
+              <span className="ml-2">
+                <GoLink />
+              </span>
+            </a>
+            <a
+              href="https://github.com/bkar-ali/AuthMERN-Backend/tree/main"
+              target="_blank"
+              className="flex flex-1 border rounded-2xl px-2 py-1 items-center justify-center cursor-pointer hover:bg-white hover:text-black duration-500 font-semibold"
+            >
+              Github
+              <span className="ml-2">
+                <FaGithub />
+              </span>
+            </a>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.8 }}
+          className="hidden md:block w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
+        >
+          <a href="https://bkar-e-commerce.netlify.app/#" target="_blank">
+            <Image
+              src={"/img/authMern.PNG"}
+              fill
+              alt=""
+              className="object-cover"
+            />
+          </a>
+        </motion.div>
+      </div>
       {/* Assel Project */}
       <div className="box w-full h-full flex flex-col md:flex-row overflow-hidden rounded-xl mb-10">
         <motion.div
@@ -189,7 +342,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           {/* Header */}
           <h2 className="text-2xl tracking-wider font-semibold">
             <span className="text-main">Assel </span>
-            E-commerce <span className="text-sm">(Last Work)</span>
+            E-commerce
           </h2>
           {/* About Project */}
           <div className="pt-2 text-sm">
@@ -472,7 +625,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         >
           {/* Header */}
           <h2 className="text-2xl tracking-wider font-semibold">
-            <span className="text-world">Abobakr </span>
+            <span className="text-world">Abubakr </span>
             World
             <span className="text-[12px]"> (Early Project)</span>
           </h2>

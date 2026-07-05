@@ -81,7 +81,7 @@ const RightPage = () => {
             ))}
           </div>
         </div>
-        <div className="p-3 md:px-5">
+        <div className="">
           <AnimatePresence mode="wait">
             <motion.div
               key={section}
