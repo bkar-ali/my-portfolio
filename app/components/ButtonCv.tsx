@@ -2,7 +2,7 @@ const ButtonCv = () => {
   return (
     <div className="w-full flex justify-center items-center p-15">
       <a
-        href="/Abubakr_Frontend_CV.pdf"
+        href="/public/Aboubakr_Ali_Full_Stack_Developer.pdf"
         download
         className="relative text-main hover:bg-main/50 hover:scale-105 duration-500 hover:text-white font-semibold bg- py-4 px-8 border border-white/10 rounded-xl animate-breathe overflow-hidden"
       >
