@@ -2,14 +2,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { FaAngleRight } from "react-icons/fa6";
+import { FaAngleLeft } from "react-icons/fa6";
 
 import { FaNodeJs } from "react-icons/fa";
-import {
-  SiExpress,
-  SiMongodb,
-  SiMongoose,
-  SiJsonwebtokens,
-} from "react-icons/si";
+import { SiExpress, SiJsonwebtokens } from "react-icons/si";
 
 // Main Stack
 import { FaReact } from "react-icons/fa";
@@ -26,9 +22,84 @@ import { FaBootstrap } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiVite } from "react-icons/si";
 
+import { SiPostgresql } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
+
 // Live Demo
 import { GoLink } from "react-icons/go";
 
+const managementTech = [
+  {
+    id: 1,
+    name: "Next.js",
+    icon: <RiNextjsFill />,
+    color: "#ffffff",
+    shadow: "shadow-[0_0_25px_rgba(255,255,255,0.25)]",
+  },
+  {
+    id: 2,
+    name: "React",
+    icon: <FaReact />,
+    color: "#61DAFB",
+    shadow: "shadow-[0_0_25px_rgba(97,218,251,0.35)]",
+  },
+  {
+    id: 3,
+    name: "TypeScript",
+    icon: <BiLogoTypescript />,
+    color: "#3178C6",
+    shadow: "shadow-[0_0_25px_rgba(49,120,198,0.35)]",
+  },
+  {
+    id: 4,
+    name: "Tailwind CSS",
+    icon: <RiTailwindCssFill />,
+    color: "#38BDF8",
+    shadow: "shadow-[0_0_25px_rgba(56,189,248,0.35)]",
+  },
+  {
+    id: 5,
+    name: "Redux Toolkit",
+    icon: <SiRedux />,
+    color: "#764ABC",
+    shadow: "shadow-[0_0_25px_rgba(118,74,188,0.35)]",
+  },
+  {
+    id: 6,
+    name: "Node.js",
+    icon: <FaNodeJs />,
+    color: "#5FA04E",
+    shadow: "shadow-[0_0_25px_rgba(95,160,78,0.35)]",
+  },
+  {
+    id: 7,
+    name: "Express.js",
+    icon: <SiExpress />,
+    color: "#ffffff",
+    shadow: "shadow-[0_0_25px_rgba(255,255,255,0.25)]",
+  },
+  {
+    id: 8,
+    name: "PostgreSQL",
+    icon: <SiPostgresql />,
+    color: "#4169E1",
+    shadow: "shadow-[0_0_25px_rgba(65,105,225,0.35)]",
+  },
+  {
+    id: 9,
+    name: "Prisma",
+    icon: <SiPrisma />,
+    color: "#5A67D8",
+    shadow: "shadow-[0_0_25px_rgba(90,103,216,0.35)]",
+  },
+  {
+    id: 10,
+    name: "JWT",
+    icon: <SiJsonwebtokens />,
+    color: "#D63AFF",
+    shadow: "shadow-[0_0_25px_rgba(214,58,255,0.35)]",
+  },
+];
 const asselTech = [
   {
     id: 1,
@@ -71,64 +142,6 @@ const asselTech = [
     icon: <SiAxios />,
     color: "#5A29E4",
     shadow: "shadow-[0_0_25px_rgba(90,41,228,0.35)]",
-  },
-];
-const authTech = [
-  {
-    id: 1,
-    name: "Next",
-    icon: <RiNextjsFill />,
-    color: "#ffffff",
-    shadow: "shadow-[0_0_25px_rgba(255,255,255,0.25)]",
-  },
-  {
-    id: 2,
-    name: "React",
-    icon: <FaReact />,
-    color: "#61DAFB",
-    shadow: "shadow-[0_0_25px_rgba(97,218,251,0.35)]",
-  },
-  {
-    id: 3,
-    name: "Tailwind",
-    icon: <RiTailwindCssFill />,
-    color: "#38BDF8",
-    shadow: "shadow-[0_0_25px_rgba(56,189,248,0.35)]",
-  },
-  {
-    id: 4,
-    name: "Node.js",
-    icon: <FaNodeJs />,
-    color: "#5FA04E",
-    shadow: "shadow-[0_0_25px_rgba(95,160,78,0.35)]",
-  },
-  {
-    id: 5,
-    name: "Express",
-    icon: <SiExpress />,
-    color: "#ffffff",
-    shadow: "shadow-[0_0_25px_rgba(255,255,255,0.25)]",
-  },
-  {
-    id: 6,
-    name: "MongoDB",
-    icon: <SiMongodb />,
-    color: "#47A248",
-    shadow: "shadow-[0_0_25px_rgba(71,162,72,0.35)]",
-  },
-  {
-    id: 7,
-    name: "Mongoose",
-    icon: <SiMongoose />,
-    color: "#880000",
-    shadow: "shadow-[0_0_25px_rgba(136,0,0,0.35)]",
-  },
-  {
-    id: 8,
-    name: "JWT",
-    icon: <SiJsonwebtokens />,
-    color: "#D63AFF",
-    shadow: "shadow-[0_0_25px_rgba(214,58,255,0.35)]",
   },
 ];
 const shopsyTech = [
@@ -213,7 +226,7 @@ function scrollToTop() {
 const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
   return (
     <div className="md: p-3 text-white">
-      {/* Auth MERN Project */}
+      {/* Management Project */}
       <div className="box w-full h-full flex flex-col md:flex-row overflow-hidden rounded-xl mb-10">
         {/* Mobile Image */}
         <motion.div
@@ -223,7 +236,12 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           transition={{ duration: 0.8 }}
           className="block md:hidden w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
-          <Image src={"/img/auth.png"} fill alt="" className="object-cover" />
+          <Image
+            src={"/img/management.png"}
+            fill
+            alt=""
+            className="object-cover"
+          />
         </motion.div>
         {/* Mobile Image */}
         <motion.div
@@ -235,28 +253,29 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         >
           {/* Header */}
           <h2 className="text-2xl tracking-wider font-semibold">
-            <span className="text-auth">Authentication </span>
+            <span className="text-management">Management App </span>
             System
           </h2>
           {/* About Project */}
           <div className="pt-2 text-sm">
-            A full-stack MERN authentication system with secure authentication
-            and modern backend architecture.
+            A full-stack project management application designed to help teams
+            organize projects, manage tasks, and track progress through an
+            interactive dashboard.
           </div>
           {/* Features Section */}
-          <h2 className="pt-1 text-auth font-semibold">Features</h2>
+          <h2 className="pt-1 text-management font-semibold">Features</h2>
           <div className="pt-1 text-sm">
-            • User registration and login
-            <br />• JWT-based authentication
-            <br />• Protected routes
-            <br />• Password hashing
-            <br />• Profile management
-            <br />• Input Validation
-            <br />• RESTful API
+            • User authentication & protected routes
+            <br />• Project and task management
+            <br />• Team-based project management
+            <br />• Team members management
+            <br />• Project search functionality
+            <br />• Data visualization & analytics
+            <br />• RESTful API with Clean Architecture
           </div>
           {/* Tech */}
           <div className="pt-2 grid grid-cols-2">
-            {authTech.map((tech) => (
+            {managementTech.map((tech) => (
               <span
                 className="px-2 py-1 rounded-full text-sm mr-1 mb-2 flex items-center justify-center"
                 style={{
@@ -273,7 +292,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           {/* Live Demo */}
           <div className="pt-1 flex">
             <a
-              href="https://auth-mern-frontend-liard.vercel.app/login"
+              href="https://management-app-chi.vercel.app/"
               target="_blank"
               className="flex w-[50%] border rounded-2xl px-2 py-1 items-center justify-center mr-2 cursor-pointer hover:bg-white hover:text-black duration-500 font-semibold"
             >
@@ -283,7 +302,7 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
               </span>
             </a>
             <a
-              href="https://github.com/bkar-ali/AuthMERN-Backend/tree/main"
+              href="https://github.com/bkar-ali/management-app"
               target="_blank"
               className="flex flex-1 border rounded-2xl px-2 py-1 items-center justify-center cursor-pointer hover:bg-white hover:text-black duration-500 font-semibold"
             >
@@ -301,8 +320,13 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
           transition={{ duration: 0.8 }}
           className="hidden md:block w-full md:w-[60%] min-h-[40vh] md:min-h-[50vh] relative overflow-hidden rounded-xl"
         >
-          <a href="https://bkar-e-commerce.netlify.app/#" target="_blank">
-            <Image src={"/img/auth.png"} fill alt="" className="object-cover" />
+          <a href="https://management-app-chi.vercel.app/" target="_blank">
+            <Image
+              src={"/img/management.png"}
+              fill
+              alt=""
+              className="object-cover"
+            />
           </a>
         </motion.div>
       </div>
@@ -696,18 +720,35 @@ const Projects = ({ setSection }: { setSection: (s: string) => void }) => {
         </motion.div>
       </div>
 
-      <div
-        className=" text-main flex justify-end items-center cursor-pointer font-semibold p-4"
-        onClick={() => {
-          setSection("contact");
-          localStorage.setItem("page", "contact");
-          scrollToTop();
-        }}
-      >
-        Contact Secion
-        <span className="ml-1">
-          <FaAngleRight />
-        </span>
+      {/* Navigations */}
+      <div className="flex items-center justify-between">
+        <div
+          className=" text-main flex items-center cursor-pointer font-semibold"
+          onClick={() => {
+            setSection("skills");
+            localStorage.setItem("page", "skills");
+            scrollToTop();
+          }}
+        >
+          <span className="ml-1">
+            <FaAngleLeft />
+          </span>
+          Skills Secion
+        </div>
+
+        <div
+          className=" text-main flex items-center cursor-pointer font-semibold p-4"
+          onClick={() => {
+            setSection("contact");
+            localStorage.setItem("page", "contact");
+            scrollToTop();
+          }}
+        >
+          Contact Secion
+          <span className="ml-1">
+            <FaAngleRight />
+          </span>
+        </div>
       </div>
     </div>
   );

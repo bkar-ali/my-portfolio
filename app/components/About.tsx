@@ -1,16 +1,17 @@
 import { FaAngleRight } from "react-icons/fa6";
 import ButtonCv from "./ButtonCv";
 
-type typeStandFor = {
+type StandForItem = {
   id: number;
   header: string;
   words: string;
 };
 
-const standFor: typeStandFor[] = [
+const standFor: StandForItem[] = [
   {
     id: 1,
-    header: "Responsive Web Applications",
+    header: "Responsive Development",
+    // header: "Responsive Web Applications",
     // header: "Less is more",
     words:
       "I build responsive web applications that work smoothly across desktops, tablets, and mobile devices.",
@@ -19,7 +20,8 @@ const standFor: typeStandFor[] = [
   {
     id: 2,
     // header: `Build Modern UI Web with React`,
-    header: "Clean UI Development using React",
+    header: "Clean & Reusable Code",
+    // header: "Clean UI Development using React",
     // header: "Put users first",
     words:
       "I create modern user interfaces using React with reusable components and clean scalable architecture code.",
@@ -27,7 +29,8 @@ const standFor: typeStandFor[] = [
   },
   {
     id: 3,
-    header: "Performance and User Experience",
+    header: "Performance & User Experience",
+    // header: "Performance and User Experience",
     // header: "Work smarter, not harder",
     words:
       "I optimize website performance and improve user experience by writing efficient and maintainable code.",
@@ -35,7 +38,8 @@ const standFor: typeStandFor[] = [
   },
   {
     id: 4,
-    header: "Convert Designs into Real Websites",
+    header: "Design to Development",
+    // header: "Convert Designs into Real Websites",
     // header: "Good communication",
     words:
       "I convert Figma designs into fully responsive websites while maintaining design accuracy and consistency.",
@@ -57,17 +61,19 @@ const About = ({ setSection }: { setSection: (s: string) => void }) => {
         <span className="text-4xl font-semibold block">
           Hi, I&apos;m Abubakr
           <br />
-          loves <span className="text-main">turning</span> ideas into
+          love <span className="text-main">turning</span> ideas into
           <br />
           interactive and responsive
           <br /> web experience
         </span>
-        <br />A Full Stack MERN Developer passionate about building modern and
-        responsive web applications.
+        <br />A Full Stack Developer focused on building modern, responsive, and
+        scalable web applications, working with React, Next.js, TypeScript,
+        Node.js, and Express, with experience using PostgreSQL and Prisma to
+        build backend applications and RESTful APIs.
         <br /> I enjoy creating clean user interfaces and improving user
         experience.
-        <br /> I specialize in React, Next.js, TypeScript, Node.js, Express.js,
-        MongoDB, Tailwind CSS, and RESTful APIs.
+        {/* <br /> I specialize in React, Next.js, TypeScript, Node.js, Express.js,
+        MongoDB, Tailwind CSS, and RESTful APIs. */}
         {/* i work mainly
                   with React, Next.js, TypeScript, and Tailwind CSS, and
                   I&apos;m passionate about creating clean UI and smooth user

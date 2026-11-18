@@ -16,13 +16,21 @@ import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaBootstrap } from "react-icons/fa";
 import { SiMui } from "react-icons/si";
+
 import { FaGithub } from "react-icons/fa";
 import { LuFigma } from "react-icons/lu";
 import { VscVscode } from "react-icons/vsc";
 import { SiVercel } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { SiVite } from "react-icons/si";
+import { DiVisualstudio } from "react-icons/di";
 
+// BackendSkills
+import { TbBrandCSharp } from "react-icons/tb";
+import { SiDotnet } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
+import { SiZod } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import {
   SiExpress,
@@ -33,6 +41,7 @@ import {
 } from "react-icons/si";
 
 import { FaAngleRight } from "react-icons/fa6";
+import { FaAngleLeft } from "react-icons/fa6";
 
 type skillType = {
   id: number;
@@ -41,24 +50,10 @@ type skillType = {
   color: string;
   shadow: string;
 };
-type skillsSectionType = [
-  {
-    sectionName: string;
-    skills: skillType[];
-  },
-  {
-    sectionName: string;
-    skills: skillType[];
-  },
-  {
-    sectionName: string;
-    skills: skillType[];
-  },
-  {
-    sectionName: string;
-    skills: skillType[];
-  },
-];
+type skillsSectionType = {
+  sectionName: string;
+  skills: skillType[];
+}[];
 
 const skillsSections: skillsSectionType = [
   {
@@ -109,8 +104,15 @@ const skillsSections: skillsSectionType = [
     ],
   },
   {
-    sectionName: "Other Technologies",
+    sectionName: "Frontend",
     skills: [
+      {
+        id: 9,
+        name: "JavaScript",
+        icon: <IoLogoJavascript />,
+        color: "#F7DF1E",
+        shadow: "shadow-[0_0_25px_rgba(247,223,30,0.35)]",
+      },
       {
         id: 7,
         name: "HTML",
@@ -126,11 +128,11 @@ const skillsSections: skillsSectionType = [
         shadow: "shadow-[0_0_25px_rgba(21,114,182,0.35)]",
       },
       {
-        id: 9,
-        name: "JavaScript",
-        icon: <IoLogoJavascript />,
-        color: "#F7DF1E",
-        shadow: "shadow-[0_0_25px_rgba(247,223,30,0.35)]",
+        id: 13,
+        name: "Tailwind",
+        icon: <RiTailwindCssFill />,
+        color: "#38BDF8",
+        shadow: "shadow-[0_0_25px_rgba(56,189,248,0.35)]",
       },
       {
         id: 10,
@@ -147,27 +149,12 @@ const skillsSections: skillsSectionType = [
         shadow: "shadow-[0_0_25px_rgba(0,127,255,0.35)]",
       },
       {
-        id: 12,
-        name: "Vite",
-        icon: <SiVite />,
-        color: "#646CFF",
-        shadow: "shadow-[0_0_25px_rgba(100,108,255,0.35)]",
-      },
-      {
-        id: 13,
-        name: "Tailwind",
-        icon: <RiTailwindCssFill />,
-        color: "#38BDF8",
-        shadow: "shadow-[0_0_25px_rgba(56,189,248,0.35)]",
-      },
-      {
         id: 14,
         name: "Redux",
         icon: <SiRedux />,
         color: "#764ABC",
         shadow: "shadow-[0_0_25px_rgba(118,74,188,0.35)]",
       },
-
       {
         id: 15,
         name: "Axios",
@@ -175,11 +162,32 @@ const skillsSections: skillsSectionType = [
         color: "#5A29E4",
         shadow: "shadow-[0_0_25px_rgba(90,41,228,0.35)]",
       },
+      {
+        id: 12,
+        name: "Vite",
+        icon: <SiVite />,
+        color: "#646CFF",
+        shadow: "shadow-[0_0_25px_rgba(100,108,255,0.35)]",
+      },
     ],
   },
   {
     sectionName: "Backend",
     skills: [
+      {
+        id: 24,
+        name: "C#",
+        icon: <TbBrandCSharp />,
+        color: "#9B4F96",
+        shadow: "shadow-[0_0_25px_rgba(155,79,150,0.35)]",
+      },
+      {
+        id: 25,
+        name: ".NET",
+        icon: <SiDotnet />,
+        color: "#512BD4",
+        shadow: "shadow-[0_0_25px_rgba(81,43,212,0.35)]",
+      },
       {
         id: 16,
         name: "Mongoose",
@@ -188,11 +196,32 @@ const skillsSections: skillsSectionType = [
         shadow: "shadow-[0_0_25px_rgba(136,0,0,0.35)]",
       },
       {
+        id: 26,
+        name: "PostgreSQL",
+        icon: <SiPostgresql />,
+        color: "#4169E1",
+        shadow: "shadow-[0_0_25px_rgba(65,105,225,0.35)]",
+      },
+      {
+        id: 27,
+        name: "Prisma",
+        icon: <SiPrisma />,
+        color: "#5A67D8",
+        shadow: "shadow-[0_0_25px_rgba(90,103,216,0.35)]",
+      },
+      {
         id: 17,
         name: "JWT",
         icon: <SiJsonwebtokens />,
         color: "#D63AFF",
         shadow: "shadow-[0_0_25px_rgba(214,58,255,0.35)]",
+      },
+      {
+        id: 29,
+        name: "Zod",
+        icon: <SiZod />,
+        color: "#3068B7",
+        shadow: "shadow-[0_0_25px_rgba(48,104,183,0.35)]",
       },
     ],
   },
@@ -207,13 +236,6 @@ const skillsSections: skillsSectionType = [
         shadow: "shadow-[0_0_25px_rgba(255,255,255,0.25)]",
       },
       {
-        id: 19,
-        name: "Figma",
-        icon: <LuFigma />,
-        color: "#F24E1E",
-        shadow: "shadow-[0_0_25px_rgba(242,78,30,0.35)]",
-      },
-      {
         id: 20,
         name: "VS Code",
         icon: <VscVscode />,
@@ -221,11 +243,25 @@ const skillsSections: skillsSectionType = [
         shadow: "shadow-[0_0_25px_rgba(0,122,204,0.35)]",
       },
       {
+        id: 30,
+        name: "Visual Studio",
+        icon: <DiVisualstudio />,
+        color: "#5C2D91",
+        shadow: "shadow-[0_0_25px_rgba(92,45,145,0.35)]",
+      },
+      {
         id: 21,
         name: "Postman",
         icon: <SiPostman />,
         color: "#FF6C37",
         shadow: "shadow-[0_0_25px_rgba(255,108,55,0.35)]",
+      },
+      {
+        id: 19,
+        name: "Figma",
+        icon: <LuFigma />,
+        color: "#F24E1E",
+        shadow: "shadow-[0_0_25px_rgba(242,78,30,0.35)]",
       },
       {
         id: 22,
@@ -303,18 +339,34 @@ const Skills = ({ setSection }: { setSection: (s: string) => void }) => {
           </div>
         </div>
       ))}
-      <div
-        className=" text-main flex justify-end items-center cursor-pointer font-semibold pt-3 md:pt-0 mt-3"
-        onClick={() => {
-          setSection("projects");
-          localStorage.setItem("page", "projects");
-          scrollToTop();
-        }}
-      >
-        Projects Secion
-        <span className="ml-1">
-          <FaAngleRight />
-        </span>
+      <div className="flex items-center justify-between">
+        <div
+          className="flex items-center text-main cursor-pointer font-semibold pt-3 md:pt-0 mt-3"
+          onClick={() => {
+            setSection("about");
+            localStorage.setItem("page", "about");
+            scrollToTop();
+          }}
+        >
+          <span className="ml-1">
+            <FaAngleLeft />
+          </span>
+          About Section
+        </div>
+
+        <div
+          className="flex items-center text-main cursor-pointer font-semibold pt-3 md:pt-0 mt-3"
+          onClick={() => {
+            setSection("projects");
+            localStorage.setItem("page", "projects");
+            scrollToTop();
+          }}
+        >
+          Projects Section
+          <span className="ml-1">
+            <FaAngleRight />
+          </span>
+        </div>
       </div>
     </div>
   );

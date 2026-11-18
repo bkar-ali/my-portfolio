@@ -25,7 +25,7 @@ const info: data[] = [
   {
     id: "phone",
     head: "Phone",
-    info: "01111045313",
+    info: "+201111045313",
     icon: <IoPhonePortraitOutline />,
   },
   {
@@ -62,7 +62,7 @@ const LeftPage = () => {
 
             <span className="text-3xl tracking-wide">Abubakr Ali</span>
             <span className="px-2 py-1 border border-white/10 rounded bg-bgCard text-[12px] tracking-widest overflow-hidden ">
-              Front End Developer
+              Full-Stack Developer
             </span>
             <div className="pt-2 text-main flex space-x-4 cursor-pointer">
               <a
